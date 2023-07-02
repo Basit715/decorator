@@ -44,6 +44,18 @@
 
 #4.The `MobilePhone` class has a constructor that takes `brand` and `model` as arguments and assigns them to the object's attributes. The `make_call` method is then invoked on the object to make a call with the phone.
 
+class MobilePhone:
+     def __init__(self, br, mo):
+          self.brand = br
+          self.model = mo
+          
+     def make_call(self):
+          print(f"my {self.brand} {self.model} is making a call........")
+          
+mob1 = MobilePhone("iphone", "12 pro max")
+mob1.make_call() 
+          
+
 
 
           
