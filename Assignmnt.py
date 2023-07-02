@@ -30,17 +30,22 @@
 
 # #. the `BankAccount` class has a constructor that takes `account_number` and `balance` as arguments and assigns them to the object's attributes. The `display_balance` method is then invoked on the object to display the account number and balance.
 
-class BankAccount:
-     def __init__(self, an, bal):
-          self.account_number = an
-          self.balance = bal
+# class BankAccount:
+#      def __init__(self, an, bal):
+#           self.account_number = an
+#           self.balance = bal
           
-     def display_balance(self):
-          print(f"My account number is {self.account_number} and the balance is {self.balance}")
+#      def display_balance(self):
+#           print(f"My account number is {self.account_number} and the balance is {self.balance}")
           
 
-customer1 = BankAccount("874356554", 100)
-customer1.display_balance() 
+# customer1 = BankAccount("874356554", 100)
+# customer1.display_balance() 
+
+#4.The `MobilePhone` class has a constructor that takes `brand` and `model` as arguments and assigns them to the object's attributes. The `make_call` method is then invoked on the object to make a call with the phone.
+
+
+
           
           
           
