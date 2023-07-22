@@ -33,7 +33,7 @@ def create_adder(x):
 
 
 add_15 = create_adder(15)
-print(add_15(10))
+# print(add_15(10))
 
 
 # ***************************decorators************************
@@ -53,7 +53,32 @@ def function_to_be_used():
      
 function_to_be_used = hello_decorator(function_to_be_used)
 
-function_to_be_used()
+# function_to_be_used()
 
 
 
+
+import time
+import math
+
+def calculate_time(func):
+     def inner1(*args, **kwargs):
+          begin = time.time()
+          
+          func(*args, **kwargs)
+          
+          end = time.time()
+          
+          print(f"Time taken by {func.__name__} is {end - begin}")
+          
+     return inner1
+
+
+
+@calculate_time            # this line is exactly same as factorial = calculate_time(factorial)
+def factorials(num):
+     time.sleep(2)
+     print(math.factorial(num))
+     
+     
+factorials(5)
